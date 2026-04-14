@@ -34,5 +34,5 @@ def subtract(a, b):
 def logarithm(a, b):
    try:
        return math.log(b, a)
-   except ValueError as e:
-       print(e)
+   except:
+       raise ValueError()
