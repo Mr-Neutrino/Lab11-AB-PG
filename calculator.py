@@ -7,8 +7,8 @@ import math
 def square_root(a):
     try:
         return math.sqrt(a)
-    except ValueError as e:
-        print(e)
+    except:
+        raise ValueError()
 
 def hypotenuse(a, b):
     math.hypot(a, b)
@@ -34,5 +34,5 @@ def subtract(a, b):
 def logarithm(a, b):
    try:
        return math.log(b, a)
-   except ValueError as e:
-       print(e)
+   except:
+       raise ValueError()
