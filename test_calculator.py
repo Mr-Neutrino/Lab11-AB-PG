@@ -13,7 +13,7 @@ class TestCalculator(TestCase):
         self.assertEqual(div(5, 10), 2)
 
     def test_log_invalid_argument(self):
-        self.assertRaises(ValueError, logarithm(-1, 5))
+        self.assertRaises(ValueError, logarithm, -1, 5)
 
     def test_hypotenuse(self):
         self.assertEqual(hypotenuse(3, 4), 5)
