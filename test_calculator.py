@@ -10,7 +10,7 @@ class TestCalculator(TestCase):
         self.assertEqual(mul(5, 2), 10)
 
     def test_divide(self):
-        self.assertEqual(div(10, 5), 2)
+        self.assertEqual(div(5, 10), 2)
 
     def test_log_invalid_argument(self):
         self.assertRaises(ValueError, logarithm(-1, 5))
