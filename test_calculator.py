@@ -20,3 +20,19 @@ class TestCalculator(TestCase):
 
     def test_sqrt(self):
         self.assertEqual(square_root(4), 2)
+
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+    
+    def test_subtract(self):
+        self.assertEqual(subtract(4, 2), 2)
+
+    def test_divide_by_zero(self):
+        self.assertRaises(ZeroDivisionError, div, 0, 10)
+
+    def test_logarithm(self):
+        self.assertEqual(logarithm(2, 4), 2)
+
+    def test_log_invalid_base(self):
+        self.assertRaises(ValueError, logarithm, 0, 0)
+
